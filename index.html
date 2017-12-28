@@ -241,51 +241,37 @@
 
    
 
-   <!--Tạo slide trang-->
-
-   <div id="myCarousel" class="carousel slide"
-   data-side=carousel">
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-   <li data-target="#myCarousel" data-slide-to="1"></li>
-   <li data-target="#myCarousel" data-slide-to="2"></li>
-   <li data-target="#myCarousel" data-slide-to="3"></li>
-    
- </ol>
- <!-- Wrapper for slide-->
- <div class="carousel-inner">
-   <div class="item active">
-     <img src="./img/imgindex/slide1-active.png" alt="YKHN" style="width:100%;"></div>
-
-      <div class="item">
-        <img src= "./img/imgindex/slide2.png" alt="YKHN" style="width:100%;">
-      </div>
-</div>
-        <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
- </div>
-
-<br>
-
+   
 
  <!-- 6 chuyên khoa-->
+<style type="text/css">
+  #background{
+    background-image: url("./img/chuyen-khoa/background.png"); height:500px;
+  }
+  div.text{position: absolute;
+    top:20%;
+    left: 35%;
 
+  }
+  #device{position: absolute;
 
- <div class="container">
-   <div class="row">
+    top:40%;
+    left: 25%; }
+  
+</style>
+
+ <div style="position: relative;" id="background">
+  <div class="text"> <h1 style="color:black; text-align:center; "><strong style="font-size: 30px;">PHÒNG KHÁM Y KHOA HÀ NỘI</strong></h1>
+    <h3 style="color:#ca1960; text-align:center;">DỊCH VỤ Y TẾ CHẤT LƯỢNG CAO</h3></div>
+  <div id="device">
+   <div class="row" >
+   
     <div class="col-sm-4">
     
        
         <div class="image-block">
           <div class="image-style-two">
-          <img src="./img/img_trung_tam/Trung tâm Chẩn đoán hình ảnh.jfif"  style="width:100%" alt="Image"> 
+          <img src="./img/img_trung_tam/Trung tâm Chẩn đoán hình ảnh.jfif"  style="width:100%" alt="Image">
            <div class="image-hover">
             <div class="image-caption"><h4><a href="./chuan-doan-hinh-anh.html">TRUNG TÂM CHUẨN ĐOÁN HÌNH ẢNH</a></h4></div></div></div></div>
        
@@ -310,10 +296,12 @@
     
     </div>
   </div>
+
 <br>
 
    
   <div class="row">
+ 
     <div class="col-sm-4">
    
 
@@ -349,23 +337,28 @@
     </div>
   </div>
 </div>
+
+</div>
+</div>
+
 <style> #container{
   width:60%;
   height:100%;
-  margin-left:20%;
+  margin-left:2%;
 }
 
-div.image-block{ height:250px;
+div.image-block{ height:100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       overflow: hidden;
-      max-width: 500px;
-  margin:10px auto;
+      max-width: 200px;
+  margin:3px auto;
     }
    .image-style-two {
   position: relative;
   z-index: 10;
   overflow: hidden;
-  height: 250px;
+  height: 100px;
+  background-color: #008763;
 }
 .image-style-two img {
   border-radius: 3px;
@@ -382,7 +375,7 @@ div.image-block{ height:250px;
   z-index: 5;
   width: 100%;
   height: 100%;
-  background: rgba(3,30,44,0.8);
+  background:#008763;
   border-radius: 3px;
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -425,13 +418,13 @@ div.image-block{ height:250px;
   max-width:75%;
   margin:0px auto;
   color:rgba(255,255,255,0.8);
-  line-height:23px;
-  margin-bottom:5px;
+  line-height:5px;
+  margin-bottom:3px;
 }
 .image-style-two .image-caption a{
   display:inline-block;
   /* width:30px; */
-  height:30px;
+  height:20px;
   text-align:center;
   color:#fff;
   border-radius:2px;
@@ -441,109 +434,36 @@ div.image-block{ height:250px;
 
 </style>
 <br>
-<!-- châm ngôn-->
+
+<!--trang thiết bị-->
 <div class="container">
- <div class="row">
-      <div class="col-sm-2" >
-      </div>
-
-          <div class="col-sm-8" >
-
-
-
-  <div id="myCarousel1" class="carousel slide" data-ride="carousel1">
-  
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="./img/imgindex/Capture1.PNG" alt="Jackma" style="width:100%">
-      </div>
-
-      <div class="item">
-        <img src="./img/imgindex/Capture2.jpg" alt="Isaac Newton" style="width:100%;">
-      </div>
+  <h3 style="color:#ca1960; text-align:center;"><strong style="font-size:30px;">TRANG THIẾT BỊ TẠI Y KHOA HÀ NỘI</strong></h3>
+  <p style="color:black;text-align: center;">Those are many machine of medicine of YKHN</p>
+  <div class="row">
+    <div class="col-md-6" style="max-height:150px auto;"> <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+    <div class="col-md-6" style="max-height:150px auto;"> <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
     
-      <div class="item">
-        <img src="./img/imgindex/Capture3.jpg" alt="WILLIAM JAMES" style="width:100%;">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
-</div>
-</div>
 
-  
+
 <br>
+<div class="row">
+  <div class="col-md-4" style="max-height:150px auto;"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+  <div class="col-md-4" style="max-height:150px auto;"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+   <div class="col-md-4" style="max-height:150px auto;"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
 
 
-  <!--Màn hình thiết bị-->
-  <div class="container">
-     <div id="myCarousel2" class="carousel slide" data-ride="carousel2">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarouse2" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarouse2" data-slide-to="1"></li>
-    </ol>
-    <!-- Wrapper for slides-->
-<div class="carousel-inner">
-      <div class="item active">
-        <div class="container">
-        <div class="row">
-    <div class="col-sm-6">
-     <img src="./img/thiet-bi/thiet-bi-1.jpg"
-     style="width: 100%;">
-    </div>
-    <div class="col-sm-6" >
-     <img src="./img/thiet-bi/thiet-bi-2.jpg"
-      style="width: 100%;">
-    </div>
-  </div>
-      </div>
-    </div>
 
-      <div class="item">
-        <div class="container">
-         <div class="row">
-    <div class="col-sm-6">
-     <img src="./img/thiet-bi/thiet-bi-3.jpg"
-      style="width:100% ;">
-    </div>
-    <div class="col-sm-6" >
-     <img src="./img/thiet-bi/thiet-bi-4.jpg"
-      style="width: 100%;">
-    </div>
-  </div>
-      </div>
-    </div>
-
-         <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 </div>
 
 
+</div>
 <br>
 <!--footer-->
+
 <div class="clear-footer" style="margin-bottom: 0px;"></div>
-<footer id="footer-section" class="container body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-bottom: 10px; background: white; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
+
+<footer id="footer-section" class=" body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-bottom: 10px; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
     <div class="row">
         <div class="col-lg-3 hidden-md  hidden-sm hidden-xs">
             <div class="fb-page" data-href="https://www.facebook.com/pg/ykhoahanoi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pg/ykhoahanoi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/ykhoahanoi/">Phòng Khám YKHN</a></blockquote></div>
@@ -624,11 +544,12 @@ div.image-block{ height:250px;
         #footer-section {
             text-align: left;
             font-weight: bold;
-            color: #acacac;
+            color:white;
+            background-image: url("./img/chuyen-khoa/footer.png")
         }
 
             #footer-section a {
-                color: #acacac !important;
+                color:white !important;
             }
 
             #footer-section li {
@@ -646,9 +567,12 @@ div.image-block{ height:250px;
 
     
 
-<div class="hidden-sm hidden-xs" style="width: 100%; text-align: center; margin-top: 20px; margin-bottom: 20px; color: #696969; font-family: inherit !important;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br/>Một sản phẩm của ISOFH</div>
+
 
 </footer>
+<div class="hidden-sm hidden-xs" style="width: 100%; text-align: center; margin-bottom: 20px; color: #fff; font-family: inherit !important;background-color:black;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br/>Một sản phẩm của ISOFH</div>
+
+
 
     <div class="modalloading">
         <div style="margin: auto auto">
