@@ -238,56 +238,110 @@
 
    <!--tạo div chưa butttom chức năng-->
 
-     <div style="position: relative;" id="myCarousel" class="carousel slide" data-side=carousel" >
+     <div  id="myCarousel" class="carousel slide" data-side=carousel" >
   
-          <div class= "carousel-inner">
-   <div class="item active" >
-     <img src="./img/chuyen-khoa/background.png" alt="YKHN" style="width:100%; height: auto;
-     max-height: 800px;  z-index: -3;object-fit:cover;">
- <div class="center" style="z-index:0; font-color:#000000;font-size:25px;">TRUNG TÂM CHẨN ĐOÁN HÌNH ẢNH</div>
-
-<div class="icon" style="top:50px;"><a href="#dich-vu" style="color:white;">DỊCH VỤ</a></div>
-  <div class="icon" style="top:110px;"><a href="#bac-si" style="color:white;">BÁC SĨ</a></div>
-  <div class="icon" id="icon1" style="top:170px;"><a href="#trang-thiet-bi" style="color:white;">TRANG THIẾT BỊ</a> </div> 
-    
-
+          <div class= "carousel-inner" style="overflow: visible;">
+   <div class="item active" style="position: relative;" >
+     <img src="./img/chuyen-khoa/BG-BACSI.png" alt="YKHN" style="width:100%; height: auto;
+     max-height: 500px;  z-index: -3;object-fit:cover;">
+ <div class="center" style="z-index:0;"> <h3 style="color:#ca1960; text-align:center;"><strong style="font-size:40px;">TRUNG TÂM CHẨN ĐOÁN HÌNH ẢNH</strong></h3></div>
+<div class="nav-small">
+<ul>
+  <li><a class="active0" href="#dich-vu"><h3 style="font-size: 30px;"><strong style="font-size: 30px;">DỊCH VỤ</strong></h3></a></li>
+  <li><a class="active1" href="#bac-si"><h3 style="font-size: 30px;"><strong style="font-size: 30px;">BÁC SĨ</strong ></h3></a></li>
+  <li><a class="active2" href="#trang-thiet-bi"><h3 style="font-size: 30px;"><strong style="font-size: 30px;">THIẾT BỊ Y TẾ</strong></h3></a></li>
+</ul>
+    </div>
+</div>
  </div>
  </div>
-<style >.center {
+
+<style >
+@media only screen and (max-width:2560px)
+{
+
+div.nav-small{ 
+    position: absolute;
+    z-index: 100000;
+    bottom: -10%;
+    left: 32%;
+ }}
+  @media only screen and (max-width:1440px)
+{
+
+div.nav-small{ 
+    position: absolute;
+    z-index: 100000;
+    bottom: -10%;
+    left: 20%;
+ }}
+ @media only screen and (max-width:1420px)
+{
+
+div.nav-small{ 
+    position: absolute;
+    z-index: 100000;
+    bottom: -10%;
+    left: 15%;
+ }}
+div.nav-small ul{   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+}
+div.nav-small li{float: left;
+margin-right: 0px;}
+
+div.nav-small li a{ 
+  display: block;
+    color: #666;
+    text-align: center;
+   
+    text-decoration: none;
+    border-right:1px solid #bbb;
+     background-color: #ddd;}
+     .active0{ padding: 14px 50px;}
+.active1{ padding: 14px 60.83px; }
+.active2{padding: 14px 40px;}
+.center {
 
 
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;}
 @media only screen and (max-width: 768px){
     .center{
         position: absolute;
-        padding-top:10%;
-        padding-left:20%;
+        top: 20%;
+    left: 50%;
         font-size:15px;
     }}
     @media only screen and (max-width: 992px){
     .center{
         position: absolute;
-        padding-top:10%;
-        padding-left:10%;
+         top: 20%;
+    left: 50%;
         font-size:15px;
     }}
      @media only screen and (max-width: 1200px){
     .center{
         position: absolute;
-        padding-top:10%;
-        padding-left:5%;
+       top: 20%;
+    left: 50%;
         font-size:20px;
     }}
 
      @media only screen and (max-width: 2000px){
     .center{
         position: absolute;
-        padding-top:10%;
-        padding-left:5%;
+        top: 20%;
+    left: 50%;
         font-size:30px;
     }
     div.item>img{
@@ -303,66 +357,43 @@
   flex-direction: column;
 }
 
-div.icon {
-position:absolute;
-  background-color:green;
-  width: 100px;
 
-  margin: 3px;
-  text-align: center;
-  line-height: 40px;
-  right:40px;
-  font-size:5px;
-}
 
-#icon1{width:150px;}
-
- @media only screen and (max-width: 510px){
-    div.icon{
-        position:absolute;
-  background-color:green;
-  width: 100px;
-
-  margin: 0px;
-  text-align: center;
-  line-height: 20px;
-  right:20px;
-  font-size:0.5px;}
-  #icon1{width:100px;}
-}
 
 </style>
 
-
+<br>
+<br>
+<br>
 <!--Dịch Vụ-->
-<div id="dich-vu" class="container">
-    <h3 style="color:#159b90;">DỊCH VỤ</h3><br>
+<div class="container" id="dich-vu" >
+     <h3 style="color:#ca1960;text-align: center; "><strong style="font-size: 35px;">DỊCH VỤ</strong></h3>
     <div class="container-fluid bg-3 text-center"> 
      <div class="row">
     <div class="col-sm-3 box-0">
     
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-        <p>Chụp X-quang ngực toàn thân</p>
-        <p style="text-decoration:underline; color:red;">Giá: 500.000đ</p>
+       <div id="caption"> <p>Chụp X-quang ngực toàn thân</p>
+        <p >Giá: 500.000đ</p></div>
     </div>
     <div class="col-sm-3 box-0"> 
     
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-        <p>Chụp CT 128 lớp</p>
-          <p style="text-decoration:underline;color:red;">Giá: 500.000đ</p>
+        <div id="caption"><p>Chụp CT 128 lớp</p>
+          <p >Giá: 500.000đ</p></div>
         
     </div>
     <div class="col-sm-3 box-0"> 
    
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-         <p>Chụp CT não</p>
-           <p style="text-decoration:underline;color:red;">Giá: 500.000đ</p>
+         <div id="caption"><p>Chụp CT não</p>
+           <p >Giá: 500.000đ</p></div>
     </div>
     <div class="col-sm-3 box-0">
     
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-        <p>Chụp CT 128 lớp</p>
-          <p style="text-decoration:underline;color:red;">Giá: 500.000đ</p>
+        <div id="caption"><p>Chụp CT 128 lớp</p>
+          <p >Giá: 500.000đ</p></div>
     </div>
   </div>
 </div><br>
@@ -372,64 +403,77 @@ position:absolute;
     <div class="col-sm-3 box-0">
     
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-        <p>Siêu âm</p>
-          <p style="text-decoration:underline;color:red;">Giá: 500.000đ</p>
+        <div id="caption"><p>Siêu âm</p>
+          <p >Giá: 500.000đ</p></div>
     </div>
     <div class="col-sm-3 box-0"> 
     
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-        <p>Chụp cắt lớp EVO</p>
-          <p style="text-decoration:underline;color:red;">Giá: 500.000đ</p>
+       <div id="caption"> <p>Chụp cắt lớp EVO</p>
+          <p >Giá: 500.000đ</p></div>
     </div>
     <div class="col-sm-3 box-0"> 
     
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-        <p>Chụp X-Quang</p>
-          <p style="text-decoration:underline;color:red;">Giá: 500.000đ</p>
+        <div id="caption"><p>Chụp X-Quang</p>
+          <p >Giá: 500.000đ</p></div>
     </div>
     <div class="col-sm-3 box-0">
     
       <img src="./img/chuyen-khoa/dich-vu/ct.jpg" style="width:100%" alt="Image">
-        <p>Siêu âm ổ bụng</p>
-          <p style="text-decoration:underline;color:red;">Giá: 500.000đ</p>
+       <div id="caption"> <p>Siêu âm ổ bụng</p>
+          <p >Giá: 500.000đ</p></div>
       </div>
       </div>
      </div>
-
     </div>
-
+<style type="text/css">
+    #caption{color:white;
+        font-size: 15px;
+        background-color:#008763;}
+</style>
 
     <!--Bác sĩ-->
     <div id="bac-si" class="container">
-    <h3 style="color:#159b90;">BÁC SĨ</h3><br>
+    <h3 style="color:#ca1960;text-align: center; "><strong style="font-size: 35px;">BÁC SĨ</strong></h3>
     <div class="container-fluid bg-3 text-center"> 
      <div class="row">
     <div class="col-sm-3 box">
     
       <img src="./img/chuyen-khoa/bac-si/ảnh bác sĩ y khoa.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <br>
-        <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-        <p>Chuyên Môn</p>
+      <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
     </div>
     <div class="col-sm-3 box"> 
     
-      <img src="./img/chuyen-khoa/bac-si/Bác sỹ cười.jpg" class="img-responsive" style="width:100%" alt="Image">     <br>
-    <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-      <p>Chuyên Môn</p>
+      <img src="./img/chuyen-khoa/bac-si/Bác sỹ cười.jpg" class="img-responsive" style="width:100%" alt="Image">    
+    <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
     </div>
     <div class="col-sm-3 box"> 
    
       <img src="./img/chuyen-khoa/bac-si/Bác sỹ cười 2.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <br>
-         <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-           <p>Chuyên Môn</p>
+      
+          <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
     </div>
     <div class="col-sm-3 box">
     
       <img src="./img/chuyen-khoa/bac-si/Bác sỹ cười 3.jpg"  class="img-responsive" style="width:100%" alt="Image">
-      <br>
-        <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-          <p>Chuyên Môn</p>
+      <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
 
     </div>
   </div>
@@ -440,30 +484,38 @@ position:absolute;
     <div class="col-sm-3 box">
     
       <img src="./img/chuyen-khoa/bac-si/ảnh bác sĩ y khoa.jpg" class="img-responsive" style="width:100%" alt="Image">
-       <br>
-       <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-         <p>Chuyên Môn</p>
+      <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
     </div>
     <div class="col-sm-3 box"> 
     
       <img src="./img/chuyen-khoa/bac-si/Bác sỹ cười 2.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <br>
-       <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-         <p>Chuyên Môn</p>
+      <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
     </div>
     <div class="col-sm-3 box"> 
     
       <img src="./img/chuyen-khoa/bac-si/Bác sỹ cười.jpg" class="img-responsive" style="width:100% " alt="Image"> 
-       <br>
-       <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-         <p>Chuyên Môn</p>
+       <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
     </div>
     <div class="col-sm-3 box">
     
       <img src="./img/chuyen-khoa/bac-si/Bác sỹ cười 3.jpg" class="img-responsive" style="width:100%" alt="Image">
-       <br>
-        <a href="./Bac-si.html">P.GS Bác Sĩ:...</a>
-          <p>Chuyên Môn</p>
+       <div id="caption">
+        <a href="./Bac-si.html" style="color:white;">P.GS Bác Sĩ:...</a>
+        <br>
+        <br>
+        <p>Chuyên Môn</p></div>
       </div>
       </div>
      </div>
@@ -487,32 +539,29 @@ position:absolute;
 <!--Trang thiết bị-->
 
 <div id="trang-thiet-bi" class="container">
-    <h3 style="color:#159b90;">TRANG THIẾT BỊ</h3><br>
+    <h3 style="color:#ca1960;text-align: center; "><strong style="font-size: 35px;">TRANG THIẾT BỊ</strong></h3><br>
     <div class="container-fluid bg-3 text-center"> 
-     <div class="row">
-    <div class="col-sm-3 box-0">
+   <div class="row">
+    <div class="col-md-6" style="max-height:300px auto;"> <img src="./img/chuyen-khoa/trang-thiet-bi/may1.jpg" class="img-responsive" style="width:100%; max-height:300px;object-fit: cover;" alt="Image"></div>
+    <div class="col-md-6" style="max-height:300px auto;"> <img src="./img/chuyen-khoa/trang-thiet-bi/may2.jpg" class="img-responsive" style="width:100%;  max-height:300px ;object-fit: cover;" alt="Image"></div>
     
-      <img src="./img/chuyen-khoa/trang-thiet-bi/may1.jpg" class="img-responsive" style="width:100%" alt="Image">
-        <p>MÁY A</p>
-    </div>
-    <div class="col-sm-3 box-0"> 
-    
-      <img src="./img/chuyen-khoa/trang-thiet-bi/may2.jpg" class="img-responsive"  style="width:100%" alt="Image">
-        <p>MÁY B</p>
-    </div>
-    <div class="col-sm-3 box-0"> 
-   
-      <img src="./img/chuyen-khoa/trang-thiet-bi/may3.jpg" class="img-responsive" style="width:100%" alt="Image">
-         <p>MÁY C</p>
-    </div>
-    <div class="col-sm-3 box-0">
-    
-      <img src="./img/chuyen-khoa/trang-thiet-bi/may4.jpg" class="img-responsive" style="width:100%" alt="Image">
-        <p>MÁY D</p>
-    </div>
   </div>
+
+
+<br>
+<div class="row">
+  <div class="col-md-4" style="max-height:150px auto;"><img src="./img/chuyen-khoa/trang-thiet-bi/may3.jpg" class="img-responsive" style="width:100%;max-height:200px;object-fit: cover;" alt="Image"></div>
+  <div class="col-md-4" style="max-height:150px auto;"><img src="./img/thiet-bi/thiet-bi-1.jpg" class="img-responsive" style="width:100%;max-height:200px ;object-fit:cover;" alt="Image"></div>
+   <div class="col-md-4" style="max-height:150px auto;"><img src="./img/chuyen-khoa/trang-thiet-bi/may4.jpg" class="img-responsive" style="width:100%;max-height:200px ;object-fit:cover;" alt="Image"></div>
+
+
+
 </div>
-</div><br><br>
+
+
+</div>
+</div>
+<br><br>
 
 
 
@@ -521,7 +570,7 @@ position:absolute;
 <div class="clear-footer" style="margin-bottom: 0px;"></div>
 
 <footer id="footer-section" class=" body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
-    <div class="container">
+  <div class="container">
     <div class="row">
         <div class="col-lg-3 hidden-md  hidden-sm hidden-xs">
             <div class="fb-page" data-href="https://www.facebook.com/pg/ykhoahanoi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pg/ykhoahanoi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/ykhoahanoi/">Phòng Khám YKHN</a></blockquote></div>
@@ -598,7 +647,7 @@ position:absolute;
             </ul>
         </div>
     </div>
-</div>
+  </div>
     <style>
         #footer-section {
             text-align: left;
