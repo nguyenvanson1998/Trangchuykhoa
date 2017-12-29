@@ -185,9 +185,10 @@
 
 <div style="width: 100%; background: #FFF; padding-bottom: 10px;">
     <div class="container">
-        <div id="logo">
+      <div id="logo" style=" position:relative;height: 135px;">
     <a href="#">
-        <img src="http://ykhoahanoi.com.vn/Resource/Image/BenhVienELogin.png" alt="Phòng Khám YKHN" />
+        <img src="./img/logo/BenhVienELogin.png" alt="Phòng Khám YKHN" style="position:absolute;width: 225px;
+        z-index: 1000;"/>
     </a>
 </div>
 <nav id="navigation">
@@ -236,109 +237,31 @@
 </div>
 
    <!--tạo div chưa butttom chức năng-->
-
-     <div style="position: relative;" id="myCarousel" class="carousel slide" data-side=carousel" >
+<!-- 6 chuyên khoa-->
+<style type="text/css">
+ 
+ #cover{position: absolute;
+  top:40%;
+  left: 30%;}
   
-          <div class= "carousel-inner">
-   <div class="item active" >
-     <img src="./img/chuyen-khoa/slide1.png" alt="YKHN" style=" width:100%; height: auto;max-height: 800px;  z-index: -3;object-fit:cover;">
- <div class="center" style="z-index:0; font-color:#000000;">TRUNG TÂM CHẨN ĐOÁN HÌNH ẢNH</div>
-
-<div class="icon" style="top:50px;"><a href="#dich-vu" style="color:white;">DỊCH VỤ</a></div>
-  <div class="icon" style="top:110px;"><a href="#bac-si" style="color:white;">BÁC SĨ</a></div>
-  <div class="icon" id="icon1" style="top:170px;"><a href="#trang-thiet-bi" style="color:white;">TRANG THIẾT BỊ</a> </div> 
-    
-
- </div>
- </div>
-<style >.center {
-
-
-    position: absolute;
-   top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;}
-@media only screen and (max-width: 768px){
-    .center{
-        position: absolute;
-        padding-top:10%;
-        padding-left:20%;
-        font-size:15px;
-    }}
-    @media only screen and (max-width: 992px){
-    .center{
-        position: absolute;
-        padding-top:10%;
-        padding-left:10%;
-        font-size:15px;
-    }}
-     @media only screen and (max-width: 1200px){
-    .center{
-        position: absolute;
-        padding-top:10%;
-        padding-left:5%;
-        font-size:20px;
-    }}
-
-     @media only screen and (max-width: 2000px){
-    .center{
-        position: absolute;
-        padding-top:10%;
-        padding-left:5%;
-        font-size:30px;
-    }
-    div.item>img{
-        max-width:1000px;
-        object-fit:cover;
-    }
-}
-    
-
-
- #myCarousel {
-  display: relative;
-  flex-direction: column;
-}
-
-div.icon {
-position:absolute;
-  background-color:green;
-  width: 100px;
-
-  margin: 3px;
-  text-align: center;
-  line-height: 40px;
-  right:40px;
-  font-size:5px;
-}
-
-#icon1{width:150px;}
-
- @media only screen and (max-width: 510px){
-    div.icon{
-        position:absolute;
-  background-color:green;
-  width: 100px;
-
-  margin: 0px;
-  text-align: center;
-  line-height: 20px;
-  right:20px;
-  font-size:0.5px;}
-  #icon1{width:100px;}
-}
-
 </style>
 
+ <div style="position: relative;" id="background">
+  <img src="./img/chuyen-khoa/background.png" alt="YKHN" style="width:100%; height: auto;
+     max-height: 500px;  z-index: -3;object-fit:cover;">
+     <div id="cover">
+  <div class="text"> 
+    <h1 style="color:black; text-align: center; "><strong style="font-size: 30px;">PHÒNG KHÁM Y KHOA HÀ NỘI</strong></h1>
+    <h3 style="color:#ca1960;text-align: center; ">DỊCH VỤ Y TẾ CHẤT LƯỢNG CAO</h3></div></div></div>
 
 <!--Bác sĩ-->
+<br>
  <div id="bac-si" class="container">
-    <h3  style="color:#159b90;">BÁC SĨ</h3><br>
+   
     <div class="container-fluid bg-3 text-align-right"> 
         <div class="col-sm-5">
-                <img src="./img/chuyen-khoa/bac-si/ảnh bác sĩ y khoa.jpg" style="width:100%;height:440px;">
-                <p class="text-center">Giáo sư Phạm Minh Thông</p>
+                <img src="./img/chuyen-khoa/bac-si/ảnh bác sĩ y khoa.jpg" style="width:100%;height:440px; object-fit: contain;">
+               <div> <p class="text-center"><strong style="font-size: 20px;">GS.Phạm Minh Thông</strong></p></div>
             </div>
   <div class="col-sm-1"></div>
 
@@ -346,7 +269,7 @@ position:absolute;
          <table class="table">
     <thead>
       <tr>
-        <th style="border-bottom:2px solid #0099FF ;font-size: 30px;">Infomation</th>
+        <th style="border-bottom:2px solid #008763;;font-size: 30px;">Infomation</th>
         
       </tr>
     </thead>
@@ -381,7 +304,7 @@ position:absolute;
   <table class="table">
       <thead>
       <tr>
-        <th style="border-bottom:2px solid #0099FF ; font-size:30px;">Open Hours</th>
+        <th style="border-bottom:2px solid #008763; ; font-size:30px;">Open Hours</th>
         
       </tr>
     </thead>
@@ -404,13 +327,13 @@ position:absolute;
 
 <br>
 <div id="bac-si-lien-quan" class="container">
-    <h3 style="color:#159b90;">BÁC SĨ LIÊN QUAN</h3><br>
+    <h3 style="color:#008763;;">BÁC SĨ LIÊN QUAN</h3><br>
     <div class="row">
     <div class="col-sm-6">
         <div class="row">
             <div class="col-sm-3">
      <img src="./img/chuyen-khoa/bac-si/bac-si-lien-quan.JPG " height="80" width="80"></div>
-        <div class="col-sm-9"> <a href="#">cmsmaster</a>
+        <div class="col-sm-9"> <a href="#" style="color: #008763;">cmsmaster</a>
                                 <p>English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca</p></div></div>
                             </div>
 
@@ -418,7 +341,7 @@ position:absolute;
         <div class="row">
             <div class="col-sm-3">
      <img src="./img/chuyen-khoa/bac-si/bac-si-lien-quan.JPG " height="80" width="80"></div>
-        <div class="col-sm-9"> <a href="#">cmsmaster</a>
+        <div class="col-sm-9"> <a href="#" style="color: #008763;">cmsmaster</a>
                                 <p>English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca</p></div></div>
                             </div>
     </div>
@@ -428,7 +351,7 @@ position:absolute;
         <div class="row">
             <div class="col-sm-3">
      <img src="./img/chuyen-khoa/bac-si/bac-si-lien-quan.JPG " height="80" width="80"></div>
-        <div class="col-sm-9"> <a href="#">cmsmaster</a>
+        <div class="col-sm-9"> <a href="#" style="color: #008763;">cmsmaster</a>
                                 <p>English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca</p></div></div>
                             </div>
 
@@ -436,7 +359,7 @@ position:absolute;
         <div class="row">
             <div class="col-sm-3">
      <img src="./img/chuyen-khoa/bac-si/bac-si-lien-quan.JPG " height="80" width="80"></div>
-        <div class="col-sm-9"> <a href="#">cmsmaster</a>
+        <div class="col-sm-9"> <a href="#" style="color: #008763;">cmsmaster</a>
                                 <p>English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca</p></div></div>
                             </div>
     </div>
@@ -446,7 +369,7 @@ position:absolute;
         <div class="row">
             <div class="col-sm-3">
      <img src="./img/chuyen-khoa/bac-si/bac-si-lien-quan.JPG " height="80" width="80"></div>
-        <div class="col-sm-9"> <a href="#">cmsmaster</a>
+        <div class="col-sm-9"> <a href="#" style="color: #008763;">cmsmaster</a>
                                 <p>English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca</p></div></div>
                             </div>
 
@@ -454,7 +377,7 @@ position:absolute;
         <div class="row">
             <div class="col-sm-3">
      <img src="./img/chuyen-khoa/bac-si/bac-si-lien-quan.JPG " height="80" width="80"></div>
-        <div class="col-sm-9"> <a href="#">cmsmaster</a>
+        <div class="col-sm-9"> <a href="#" style="color: #008763;">cmsmaster</a>
                                 <p>English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca</p></div></div>
                             </div>
     </div>
@@ -466,7 +389,9 @@ position:absolute;
 
 <!--footer-->
 <div class="clear-footer" style="margin-bottom: 0px;"></div>
-<footer id="footer-section" class="container body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-bottom: 10px; background: white; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
+
+<footer id="footer-section" class=" body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
+  <div class="container">
     <div class="row">
         <div class="col-lg-3 hidden-md  hidden-sm hidden-xs">
             <div class="fb-page" data-href="https://www.facebook.com/pg/ykhoahanoi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pg/ykhoahanoi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/ykhoahanoi/">Phòng Khám YKHN</a></blockquote></div>
@@ -543,15 +468,17 @@ position:absolute;
             </ul>
         </div>
     </div>
+  </div>
     <style>
         #footer-section {
             text-align: left;
             font-weight: bold;
-            color: #acacac;
+            color:white;
+            background-image: url("./img/chuyen-khoa/footer.png")
         }
 
             #footer-section a {
-                color: #acacac !important;
+                color:white !important;
             }
 
             #footer-section li {
@@ -569,9 +496,11 @@ position:absolute;
 
     
 
-<div class="hidden-sm hidden-xs" style="width: 100%; text-align: center; margin-top: 20px; margin-bottom: 20px; color: #696969; font-family: inherit !important;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br/>Một sản phẩm của ISOFH</div>
+
 
 </footer>
+<div class="hidden-sm hidden-xs" style="width: 100%;text-align: center;padding: 10px;/* margin-bottom: 20px; */color: #fff;font-family: inherit !important;background-color: #2b2e31;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br>Một sản phẩm của ISOFH</div>
+
 
     <div class="modalloading">
         <div style="margin: auto auto">
@@ -582,14 +511,8 @@ position:absolute;
     </div>
     <div id="modal-area"></div>
 
-<!--end trang-->
-</body>
+
+  </body>
 </html>
-
-
-
-
-
-
 
    
