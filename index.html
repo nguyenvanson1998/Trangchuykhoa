@@ -108,7 +108,7 @@
 
 
 
-  <body>
+  <body style="overflow: hidden !important; overflow-y:auto !important;">
    
    <!--nav bar-->
    <table style="width: 100%; background:       #313131; height: 37px;" id="topbar">
@@ -187,9 +187,10 @@
 
 <div style="width: 100%; background: #FFF; padding-bottom: 10px;">
     <div class="container">
-        <div id="logo">
+        <div id="logo" style=" position:relative;height: 135px;">
     <a href="#">
-        <img src="http://ykhoahanoi.com.vn/Resource/Image/BenhVienELogin.png" alt="Phòng Khám YKHN" />
+        <img src="./img/logo/BenhVienELogin.png" alt="Phòng Khám YKHN" style="position:absolute;width: 225px;
+        z-index: 1000;"/>
     </a>
 </div>
 
@@ -245,9 +246,7 @@
 
  <!-- 6 chuyên khoa-->
 <style type="text/css">
-  #background{
-    background-image: url("./img/chuyen-khoa/background.png"); height:500px;
-  }
+ 
   div.text{position: absolute;
     top:20%;
     left: 35%;
@@ -261,6 +260,8 @@
 </style>
 
  <div style="position: relative;" id="background">
+  <img src="./img/chuyen-khoa/background.png" alt="YKHN" style="width:100%; height: auto;
+     max-height: 500px;  z-index: -3;object-fit:cover;">
   <div class="text"> <h1 style="color:black; text-align:center; "><strong style="font-size: 30px;">PHÒNG KHÁM Y KHOA HÀ NỘI</strong></h1>
     <h3 style="color:#ca1960; text-align:center;">DỊCH VỤ Y TẾ CHẤT LƯỢNG CAO</h3></div>
   <div id="device">
@@ -273,7 +274,7 @@
           <div class="image-style-two">
           <img src="./img/img_trung_tam/Trung tâm Chẩn đoán hình ảnh.jfif"  style="width:100%" alt="Image">
            <div class="image-hover">
-            <div class="image-caption"><h4><a href="./chuan-doan-hinh-anh.html">TRUNG TÂM CHUẨN ĐOÁN HÌNH ẢNH</a></h4></div></div></div></div>
+            <div class="image-caption"><h4><a href="./chuan-doan-hinh-anh.html">TRUNG TÂM CHẨN ĐOÁN HÌNH ẢNH</a></h4></div></div></div></div>
        
     </div>
     <div class="col-sm-4"> 
@@ -282,7 +283,7 @@
           <div class="image-style-two">
           <img src="./img/img_trung_tam/Trung tâm Ung bướu.png"  style="width:100%" alt="Image"> 
            <div class="image-hover">
-            <div class="image-caption"><h4><a href="/ung-buou/">TRUNG TÂM CHUẨN ĐOÁN UNG BƯỚU</a></h4></div></div></div></div>
+            <div class="image-caption"><h4><a href="/ung-buou/">TRUNG TÂM CHẨN ĐOÁN UNG BƯỚU</a></h4></div></div></div></div>
      
     </div>
     <div class="col-sm-4"> 
@@ -437,20 +438,20 @@ div.image-block{ height:100px;
 
 <!--trang thiết bị-->
 <div class="container">
-  <h3 style="color:#ca1960; text-align:center;"><strong style="font-size:30px;">TRANG THIẾT BỊ TẠI Y KHOA HÀ NỘI</strong></h3>
+  <h3 style="color:#ca1960; text-align:center;"><strong style="font-size:30px;">HÌNH ẢNH TẠI PHÒNG KHÁM Y KHOA HÀ NỘI</strong></h3>
   <p style="color:black;text-align: center;">Those are many machine of medicine of YKHN</p>
   <div class="row">
-    <div class="col-md-6" style="max-height:150px auto;"> <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-    <div class="col-md-6" style="max-height:150px auto;"> <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+    <div class="col-md-6" style="max-height:300px auto;"> <img src="./img/chuyen-khoa/trang-thiet-bi/may1.jpg" class="img-responsive" style="width:100%; max-height:300px ;" alt="Image"></div>
+    <div class="col-md-6" style="max-height:300px auto;"> <img src="./img/chuyen-khoa/trang-thiet-bi/may2.jpg" class="img-responsive" style="width:100%;  max-height:300px ;" alt="Image"></div>
     
   </div>
 
 
 <br>
 <div class="row">
-  <div class="col-md-4" style="max-height:150px auto;"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-  <div class="col-md-4" style="max-height:150px auto;"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-   <div class="col-md-4" style="max-height:150px auto;"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+  <div class="col-md-4" style="max-height:150px auto;"><img src="./img/chuyen-khoa/trang-thiet-bi/may3.jpg" class="img-responsive" style="width:100%;max-height:200px" alt="Image"></div>
+  <div class="col-md-4" style="max-height:150px auto;"><img src="./img/thiet-bi/thiet-bi-1.jpg" class="img-responsive" style="width:100%;max-height:200px" alt="Image"></div>
+   <div class="col-md-4" style="max-height:150px auto;"><img src="./img/chuyen-khoa/trang-thiet-bi/may4.jpg" class="img-responsive" style="width:100%;max-height:200px" alt="Image"></div>
 
 
 
@@ -463,7 +464,7 @@ div.image-block{ height:100px;
 
 <div class="clear-footer" style="margin-bottom: 0px;"></div>
 
-<footer id="footer-section" class=" body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-bottom: 10px; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
+<footer id="footer-section" class=" body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
     <div class="row">
         <div class="col-lg-3 hidden-md  hidden-sm hidden-xs">
             <div class="fb-page" data-href="https://www.facebook.com/pg/ykhoahanoi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pg/ykhoahanoi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/ykhoahanoi/">Phòng Khám YKHN</a></blockquote></div>
@@ -570,8 +571,7 @@ div.image-block{ height:100px;
 
 
 </footer>
-<div class="hidden-sm hidden-xs" style="width: 100%; text-align: center; margin-bottom: 20px; color: #fff; font-family: inherit !important;background-color:black;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br/>Một sản phẩm của ISOFH</div>
-
+<div class="hidden-sm hidden-xs" style="width: 100%;text-align: center;padding: 10px;/* margin-bottom: 20px; */color: #fff;font-family: inherit !important;background-color: #2b2e31;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br>Một sản phẩm của ISOFH</div>
 
 
     <div class="modalloading">

@@ -185,9 +185,10 @@
 
 <div style="width: 100%; background: #FFF; padding-bottom: 10px;">
     <div class="container">
-        <div id="logo">
+        <div id="logo" style=" position:relative;height: 135px;">
     <a href="#">
-        <img src="http://ykhoahanoi.com.vn/Resource/Image/BenhVienELogin.png" alt="Phòng Khám YKHN" />
+        <img src="./img/logo/BenhVienELogin.png" alt="Phòng Khám YKHN" style="position:absolute;width: 225px;
+        z-index: 1000;"/>
     </a>
 </div>
 <nav id="navigation">
@@ -241,7 +242,7 @@
   
           <div class= "carousel-inner">
    <div class="item active" >
-     <img src="./img/chuyen-khoa/slide1.png" alt="YKHN" style="width:100%; height: auto;
+     <img src="./img/chuyen-khoa/background.png" alt="YKHN" style="width:100%; height: auto;
      max-height: 800px;  z-index: -3;object-fit:cover;">
  <div class="center" style="z-index:0; font-color:#000000;font-size:25px;">TRUNG TÂM CHẨN ĐOÁN HÌNH ẢNH</div>
 
@@ -517,7 +518,8 @@ position:absolute;
 
 <!--footer-->
 <div class="clear-footer" style="margin-bottom: 0px;"></div>
-<footer id="footer-section" class="container body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-bottom: 10px; background: white; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
+
+<footer id="footer-section" class=" body-content hidden-sm hidden-xs" style="min-height: 0px; padding: 0px; margin-top: -2px; padding-top: 50px !important; padding-bottom: 50px;">
     <div class="row">
         <div class="col-lg-3 hidden-md  hidden-sm hidden-xs">
             <div class="fb-page" data-href="https://www.facebook.com/pg/ykhoahanoi/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pg/ykhoahanoi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/ykhoahanoi/">Phòng Khám YKHN</a></blockquote></div>
@@ -598,11 +600,12 @@ position:absolute;
         #footer-section {
             text-align: left;
             font-weight: bold;
-            color: #acacac;
+            color:white;
+            background-image: url("./img/chuyen-khoa/footer.png")
         }
 
             #footer-section a {
-                color: #acacac !important;
+                color:white !important;
             }
 
             #footer-section li {
@@ -620,9 +623,11 @@ position:absolute;
 
     
 
-<div class="hidden-sm hidden-xs" style="width: 100%; text-align: center; margin-top: 20px; margin-bottom: 20px; color: #696969; font-family: inherit !important;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br/>Một sản phẩm của ISOFH</div>
+
 
 </footer>
+<div class="hidden-sm hidden-xs" style="width: 100%;text-align: center;padding: 10px;/* margin-bottom: 20px; */color: #fff;font-family: inherit !important;background-color: #2b2e31;">Nội dung được kiểm duyệt và bảo đảm chuyên môn bởi Phòng khám Y khoa Hà Nội<br>Một sản phẩm của ISOFH</div>
+
 
     <div class="modalloading">
         <div style="margin: auto auto">
@@ -633,8 +638,6 @@ position:absolute;
     </div>
     <div id="modal-area"></div>
 
-<!--end trang-->
+
   </body>
 </html>
-
-
